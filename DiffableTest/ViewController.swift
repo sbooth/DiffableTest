@@ -30,15 +30,15 @@ class Album: SearchResult {
 }
 
 class ViewController: NSViewController {
-    @IBOutlet weak var collectionView: NSCollectionView!
+	@IBOutlet weak var collectionView: NSCollectionView!
 	private var dataSource: NSCollectionViewDiffableDataSource<String, SearchResult>!
 
-    private enum SectionKind: Int {
-        case track, album
+	private enum SectionKind: Int {
+		case track, album
 	}
 
-    private static let trackSection = "track"
-    private static let albumSection = "album"
+	private static let trackSection = "track"
+	private static let albumSection = "album"
 
 	private var tracks: [Track] = [
 		Track("Santeria"), Track("The Great Gig in the Sky"), Track("Variations on the Kanon by Pachelbel"), Track("Why Can't This Be Love"), Track("Jeremy")
