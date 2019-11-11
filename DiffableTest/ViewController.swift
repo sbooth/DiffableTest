@@ -138,7 +138,7 @@ class ViewController: NSViewController {
 		}
 
 		return NSCollectionViewCompositionalLayout(sectionProvider: sectionProvider)
-    }
+	}
 
 	private func configureHierarchy() {
 		collectionView.register(NSNib(nibNamed: "TrackItem", bundle: nil), forItemWithIdentifier: TrackItem.reuseIdentifier)
